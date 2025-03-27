@@ -58,7 +58,7 @@ html{
 }
 .inicio{
     background-size: cover;
-    background-image: url(fotos/fondo.jpg);
+    background-image: url("/repositorio/fotos/fondo.jpg");
     height: 100vh;
     padding-top: 70px;
     color: #fff;
