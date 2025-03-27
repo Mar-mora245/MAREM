@@ -26,7 +26,7 @@ html{
 }
 .contenedor-header header .logo a{
     background-position: center;
-    background-image: url('fotos/logo.jpg');
+    background-image: url('/repositorio/fotos/logo.jpg');
     height: auto;
     display: block;
     background-size: contain;
