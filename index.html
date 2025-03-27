@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio marem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="fotos/logo.jpg" alt="Logo" style="width:80px; height:auto;">
+
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum"onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#portafolio"onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsibe" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="fotos/logo por fin.png" alt=""
+            </div>
+            <h1>MARÍA MORA</h1>
+            <h2>Estudiante de diseño visual
+                <br> 9 semestre</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Soy Marem, una diseñadora visual en formación, actualmente cursando el noveno semestre en la Universidad Ucompensar. Mi nombre nace de la abreviación de María del Mar, y refleja mi conexión con el mar y su dinamismo. Para mí, el diseño es un medio de expresión que combina creatividad, técnica y estrategia.</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            14-02-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 305 461 64 64
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            soracipamora1402@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Bogotá, Colombia
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-skating"></i>
+                            <span>Patinar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Técnicas</h3>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso1">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso2">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Premiere</span>
+                        <div class="barra-skill">
+                            <div class="progreso3">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>After efects</span>
+                        <div class="barra-skill">
+                            <div class="progreso4">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Maya</span>
+                        <div class="barra-skill">
+                            <div class="progreso5">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso6">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso7">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso8">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso9">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso10">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <div class="fila">
+                <div class="col izquierdo">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Profesional en diseño visual</h4>
+                        <span class="casa">Fundación universitaria compensar</span>
+                        <br><span class="fecha">2021-Actualmente</span>
+                    </div>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Educación secundaria</h4>
+                        <span class="casa">Colegio carlo Federici</span>
+                        <br><span class="fecha">2012-2018</span>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Aprendiz de bienestar</h4>
+                        <span class="casa">Omnitempus</span>
+                        <br><span class="fecha">Febrero 2023-Agosto 2023</span>
+                    </div>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operario VIP</h4>
+                        <span class="casa">Cinemark</span>
+                        <br><span class="fecha">Octubre 2021-Diciembre 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="fotos/caasa con fondo.jpg">
+                    <div class="overlay">
+                        <h3>Modelaje</h3>
+                        <p>Maya</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/tren actividad 3.jpg">
+                    <div class="overlay">
+                        <h3>Modelaje</h3>
+                        <p>Maya</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/actividad 2 final.jpg">
+                    <div class="overlay">
+                        <h3>Modelaje</h3>
+                        <p>Maya</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/bono lonchera_Mesa de trabajo 1.jpg">
+                    <div class="overlay">
+                        <h3>Pieza grafica</h3>
+                        <p>Illustrator</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/cafe_Mesa de trabajo 1.jpg">
+                    <div class="overlay">
+                        <h3>Pieza grafica</h3>
+                        <p>Illustrator</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/DROGAS_Mesa de trabajo 1.jpg">
+                    <div class="overlay">
+                        <h3>Pieza grafica</h3>
+                        <p>Illustrator</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/bfde00166565019.641a72c8d9d92.gif">
+                    <div class="overlay">
+                        <h3>Gif</h3>
+                        <p>Phothoshop</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/HAMBURGUESA.jpg">
+                    <div class="overlay">
+                        <h3>Montaje</h3>
+                        <p>Phothoshop</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="fotos/20 de julio_Mesa de trabajo 1.jpg">
+                    <div class="overlay">
+                        <h3>Gif</h3>
+                        <p>Phothoshop</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Observaciones">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje &nbsp; <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7646877951265!2d-77.0051209!3d-12.1282464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033efeea79%3A0xad1fee41debdfe93!2sAv.%20Alfredo%20Benavides%2C%20Lima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sco!4v1693150114342!5m2!1ses-419!2sco" width="600" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogotá, Colombia
+                            </li>
+                            <br>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +57 322 466 62 07
+                            </li>
+                            <br>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: Soracipamora1402@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

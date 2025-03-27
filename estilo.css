@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,200&display=swap');
+*{ 
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-header{
+    background-color: #FF4D6D ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    background-position: center;
+    background-image: url('fotos/logo.jpg');
+    height: auto;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #00F0FF;
+}
+.nav-responsibe{
+    background-color: #00F0FF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.inicio{
+    background-size: cover;
+    background-image: url(fotos/fondo.jpg);
+    height: 100vh;
+    padding-top: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 40px;
+    background-color: #FF4D6D ;
+    max-width: 340px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+}
+.inicio .contenido-banner img{
+    margin-top: 30px;
+    border: 10px solid #d13f5a;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Bebas Neue", sans-serif;
+}
+.inicio .contenido-banner h2{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "roboto", sans-serif;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 30px; 
+    height: 30px; 
+    margin: 20px 8px 0px 8px; 
+    font-size: 22px;
+    transition: .3s;
+}
+.fa-solid, .fa-brands{ 
+    padding: 3px;
+    font-size: 15px;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #00F0FF;
+}
+.sobremi {
+    background-color: #FF4D6D;
+    color: #fff;
+    padding: 40px 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Permite posicionar elementos internos */
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 20px 0;
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Añade espaciado arriba y abajo */
+    margin: 0; /* Elimina cualquier margen extra */
+}
+
+.sobremi .contenido-seccion p {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px 30; /* Espaciado interno para que el contenido no quede pegado */
+}
+
+/* Fila con dos columnas centradas */
+.sobremi .fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+}
+
+/* Centrar títulos */
+.titulo-centrado {
+    text-align: center;
+}
+
+/* Columnas */
+.sobremi .fila .col {
+    width: 40%;
+    max-width: 400px;
+}
+.sobremi .fila .col h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+}
+/* Datos personales */
+.sobremi .fila .col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobremi .fila .col ul li {
+    margin: 15px 0;
+    width: 400px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    font-size: 15px;
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Intereses en columna */
+.sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-direction: column; /* Alinea los intereses en columna */
+    align-items: center; /* Centra los iconos */
+}
+
+.sobremi .fila .col .contenedor-intereses .interes {
+    width: 150px;
+    height: 50px;
+    background-color: #d13f5a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #00F0FF;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Botón de descarga */
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00F0FF;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .sobremi .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sobremi .fila .col {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .sobremi .fila .col .contenedor-intereses {
+        align-items: center;
+    }
+}
+.skills{
+    background-color: #202022;
+    color: #fff;
+    padding: 50px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+.skills .skill > span{
+    display: block;
+    margin-bottom: 20px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #7593b1;
+    position: relative;
+    margin-bottom: 20px;
+}
+.skills .skill .progreso1{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 90%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso2{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 80%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso3{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 80%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso4{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 75%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso5{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 90%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso6{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 90%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso7{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 90%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso8{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));background-color: #3498DB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 90%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso9{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 80%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .progreso10{
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 70%;
+    z-index: 20;
+    transition: 6s;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: 3px;
+    right: -25px;
+    font-size: 14px;
+}
+.curriculum{
+    background-color: #181818;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: normal;
+}
+.curriculum .fila{
+    display: flex;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #2d302f;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #2d302f;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    font-size: 22px;
+    font-weight: normal;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #3498DB;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-right: 2px solid #3498DB;
+    margin-right: 20px;
+}
+.portafolio{
+    background-color: #202022;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portafolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portafolio h2{
+    font-size: 48px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgb(13, 111, 156), rgba(28,182,152,8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+.contacto{
+    background-image: url(fotos/verificando-mapa-direcciones.jpg);
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+.contacto h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3498DB;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    padding: 20px;
+    width: fit-content;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #3498DB;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+@media screen and (max-width: 980px){
+    nav{
+        display: none;
+    }
+    .nav-responsibe{
+        display: block;
+    }
+    nav.responsibe{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #1e2326;
+        width: 180px;
+    }
+    nav.responsibe ul{
+        display: block !important;
+    }
+    nav.responsibe ul li{
+        border-radius: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skill .fila .col{
+        width: 100%;
+    }
+    .skill .fila .col .barra-skill{
+        width: 100%;
+    }
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .sobremi .fila .derecha{
+        margin-left: 20px;
+    }
+    .portafolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portafolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+
+
+
+
+
+    
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
